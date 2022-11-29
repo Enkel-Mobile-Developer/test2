@@ -1,6 +1,6 @@
 import fsp from 'fs/promises';
 
-async function find_uniqueValues (input_file){
+export async function find_uniqueValues (input_file){
 
     const data_file = await fsp.readFile(input_file, 'utf8');
     const clear_data = data_file.split(/\r?\n/);  
