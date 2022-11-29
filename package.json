@@ -1,0 +1,9 @@
+{
+    "name": "test2",
+    "main": "file_generator.js",
+    "type": "module",
+    "scripts": {
+        "dev": "node file_generator.js"
+    }
+
+}
