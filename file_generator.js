@@ -9,6 +9,4 @@ export async function find_uniqueValues (input_file){
 }
 
 
-const display_result = await find_uniqueValues ('./data.csv');
 
-console.log(display_result);
