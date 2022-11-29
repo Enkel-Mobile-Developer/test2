@@ -1,14 +1,14 @@
 import fsp from 'fs/promises'
 
-async function newArray (array){
+async function find_uniqueValues (input_file){
 
-    const data_file = await fsp.readFile('./data.csv', 'utf8') 
-    var array = data_file.split(/\r?\n/);  
-    let result = array.filter((element, i, ar) => ar.indexOf(element) === i);
+    const data_file = await fsp.readFile(input_file, 'utf8') 
+    const clear_data = data_file.split(/\r?\n/);  
+    const unique_values = input_file.filter ((element, i, values) => ar.indexOf(element) === i);
    return result      
 }
 
 
-const display = await newArray('./data.csv')
+const display_result = await find_uniqueValues ('./data.csv')
 
-console.log(display);
+console.log(display_result);
